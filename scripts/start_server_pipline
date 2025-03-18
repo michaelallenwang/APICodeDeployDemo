@@ -1,3 +1,4 @@
 #!/bin/bash
-sudo mv /home/ec2-user/deploy/index.html /var/www/html/
-sudo service httpd start
+yum install -y httpd
+mv /home/ec2-user/deploy/index.html /var/www/html/
+service httpd start
